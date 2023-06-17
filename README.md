@@ -70,15 +70,25 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   Setup bs
     composer require spatie/laravel-permission
     php artisan ui bootstrap --auth
--   Bộ phân quyền laravel spatie.be
-    composer require laravel/ui
-    php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
-    php artisan config:clear
+    <======================================================================================>
+-   Bộ phân quyền laravel spatie.be -> Sau khi cài 4 tables liên quan đến phân quyền được tạo :
 
--   PSR2 Convention coding  về style coding
-     -> composer require --dev squizlabs/php_codesniffer
-"
-./vendor/bin/phpcs --standard=PSR2 app/Traits
-./vendor/bin/phpcs --standard=PSR2 app/Models
-./vendor/bin/phpcs --standard=PSR2 app/Http/Controllers
-"
+    -   4 tables :
+
+    *   permissions
+    *   permission_role
+    *   roles
+    *   role_user
+
+    -   composer require laravel/ui
+        php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+        php artisan config:clear
+        <------------------------------------------------------------------------------------------>
+
+-   PSR2 Convention coding về style coding
+    -> composer require --dev squizlabs/php_codesniffer
+    "
+    ./vendor/bin/phpcs --standard=PSR2 app/Traits
+    ./vendor/bin/phpcs --standard=PSR2 app/Models
+    ./vendor/bin/phpcs --standard=PSR2 app/Http/Controllers
+    "
