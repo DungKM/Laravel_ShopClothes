@@ -36,7 +36,7 @@
                                     <label for="" class="form-label">City</label>
                                     <select class="selectpicker"  name="group" value={{ $role->group }}>
                                         <option value="system">System</option>
-                                    <option value="user">User</option>
+                                        <option value="user">User</option>
                                     </select>
                                 </div>
                             </div>

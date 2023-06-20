@@ -28,11 +28,9 @@
                             @enderror
                         </div>
                         <div class="form-group">
-
                             <div class="btn-group bootstrap-select">
                                 <select class="selectpicker" data-style="btn btn-danger btn-block" title="Single Select"
                                     name="group">
-   
                                     <option value="system">System</option>
                                     <option value="user">User</option>
                                 </select>

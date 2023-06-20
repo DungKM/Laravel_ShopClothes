@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Spatie\Permission\Models\Role as ModelsRole;
 
 class Role extends ModelsRole
@@ -13,6 +12,9 @@ class Role extends ModelsRole
     protected $fillable = [
         'name',
         'display_name',
-        'group'
+        'group',
+        'guard_name'
     ];
+
+  
 }

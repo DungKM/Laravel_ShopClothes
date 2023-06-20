@@ -50,18 +50,15 @@
             </div>
         </div>
         <ul class="nav">
-            <li class="">
-                <a href="">
+            <li class="{{request()->routeIs('home') ? 'active' : ''}}">
+                <a href="{{route('home')}}">
                     <i class="ti-panel"></i>
                     <p>Dashboard
-
                     </p>
                 </a>
-
             </li>
-
-            <li class="">
-                <a href="">
+            <li class="{{request()->routeIs('roles.index') ? 'active' : ''}}">
+                <a href="{{route('roles.index')}}">
                     <i class="ti-panel"></i>
                     <p>Role
                     </p>
@@ -96,12 +93,9 @@
                 <a href="" aria-expanded="true">
                     <i class="ti-panel"></i>
                     <p>Category
-
                     </p>
                 </a>
-
             </li>
-
             <li class="">
                 <a href="" aria-expanded="true">
                     <i class="ti-panel"></i>
@@ -109,20 +103,14 @@
 
                     </p>
                 </a>
-
             </li>
-
             <li class="">
                 <a href="" aria-expanded="true">
                     <i class="ti-panel"></i>
                     <p>Order
-
                     </p>
                 </a>
-
             </li>
-
-
         </ul>
     </div>
 </div>
