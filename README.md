@@ -92,3 +92,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
     ./vendor/bin/phpcs --standard=PSR2 app/Models
     ./vendor/bin/phpcs --standard=PSR2 app/Http/Controllers
     "
+
+# Laravel image intervention.io
+
+-  composer require intervention/image

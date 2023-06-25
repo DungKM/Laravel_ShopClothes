@@ -1,11 +1,11 @@
 @extends('admin.layouts.app')
-@section('title', 'Category Edit')
+@section('title', 'Category Edit'. $category->name)
 @section('content')
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="card">
                 <div class="card-content">
-                    <h1>Edit Role</h1>
+                    <h1>Edit Category</h1>
                     <form action="{{ route('categories.update', $category->id) }}" method="post">
                         @csrf
                         @method('PUT')
@@ -19,13 +19,13 @@
                                 </span>
                             @enderror
                         </div>
-                        @if ($category->childrens->count() > 1)
+                        @if ($category->childrens->count() < 1)
                         <div class="form-group">
                             <label for="">Parent Category</label>
                             <div class="btn-group bootstrap-select">
                                 <select class="selectpicker" data-style="btn btn-danger btn-block" name="parent_id">
                                     <option value="">Select parent category</option>
-                                    @foreach ($parrentCategories as $item)
+                                    @foreach ($parentCategories as $item)
                                         <option value="{{ $item->id }}"
                                             {{ (old('parent_id') ?? $category->parent_id) == $item->id ? 'selected' : '' }}>
                                             {{ $item->name }}</option>

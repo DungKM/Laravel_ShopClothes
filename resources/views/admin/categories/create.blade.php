@@ -24,7 +24,7 @@
                                 <select class="selectpicker" data-style="btn btn-danger btn-block" 
                                     name="parent_id" >
                                     <option value="">Select parent category</option>
-                                   @foreach ($parrentCategories as $item)
+                                   @foreach ($parentCategories as $item)
                                    <option value="{{$item->id}}" {{old('parent_id') == $item->id ? 'selected' : ''}}>{{$item->name}}</option>
                                    @endforeach
                                     

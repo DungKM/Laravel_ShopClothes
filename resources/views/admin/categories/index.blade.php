@@ -29,18 +29,18 @@
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->parent_name }}</td>
                             <td class="row">
-                                @can('update-category')
+                                {{-- @can('update-category') --}}
                                     <div class="col-lg-2">
                                         <a href="{{ route('categories.edit', $item->id) }}" class="btn btn-warning">Edit</a>
                                     </div>
-                                @endcan
-                                @can('delete-category')
+                                {{-- @endcan --}}
+                                {{-- @can('delete-category') --}}
                                     <form class="col-lg-2" action="{{ route('categories.destroy', $item->id) }}" method="post">
                                         @csrf
                                         @method('delete')
                                         <button class="btn btn-danger" type="submit">Delete</button>
                                     </form>
-                                @endcan
+                                {{-- @endcan --}}
                             </td>
                         </tr>
                     @endforeach

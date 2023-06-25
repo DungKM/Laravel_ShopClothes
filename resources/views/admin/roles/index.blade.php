@@ -1,7 +1,6 @@
 @extends('admin.layouts.app')
 @section('title', 'Roles')
 @section('content')
-
     @if (session('message'))
         <div>{{ session('message') }}</div>
     @endif
@@ -42,7 +41,5 @@
             </table>
             <div>{{ $roles->links() }}</div>
         </div>
-
     </div>
-
 @endsection

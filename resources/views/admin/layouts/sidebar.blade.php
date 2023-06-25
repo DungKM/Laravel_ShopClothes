@@ -57,28 +57,20 @@
                     </p>
                 </a>
             </li>
-            <li class="{{request()->routeIs('roles.index') ? 'active' : ''}}">
+            <li class="{{request()->routeIs('roles.*') ? 'active' : ''}}">
                 <a href="{{route('roles.index')}}">
                     <i class="ti-panel"></i>
                     <p>Role
                     </p>
                 </a>
-
             </li>
-
-
-
-            <li class="">
-                <a href="" aria-expanded="true">
+            <li class="{{request()->routeIs('users.*') ? 'active' : ''}}">
+                <a href="{{route('users.index')}}" aria-expanded="true">
                     <i class="ti-panel"></i>
                     <p>User
-
                     </p>
                 </a>
-
             </li>
-
-
             <li class="">
                 <a href="" aria-expanded="true">
                     <i class="ti-panel"></i>
@@ -89,8 +81,8 @@
 
             </li>
 
-            <li class="">
-                <a href="" aria-expanded="true">
+            <li class="{{request()->routeIs('categories.*') ? 'active' : ''}}">
+                <a href="{{route('categories.index')}}" aria-expanded="true">
                     <i class="ti-panel"></i>
                     <p>Category
                     </p>

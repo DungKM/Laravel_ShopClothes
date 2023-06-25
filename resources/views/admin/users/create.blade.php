@@ -22,7 +22,7 @@
                             <div class="form-group col-sm-4">
                                 <label for="">Avata</label>
                                 <input type="file" name="image" accept="image/*" class="form-control" id="image-input">
-                                
+                    
                                 @error('iamge')
                                     <span class="text-danger">
                                         {{ $message }}
@@ -32,6 +32,7 @@
                             <div class="col-sm-4">
                                 <img src="" alt="" id="show-image">
                             </div>
+
                         </div>
                        
                         <div class="form-group">
