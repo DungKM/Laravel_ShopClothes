@@ -80,7 +80,6 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body" id="AddSizeModalBody">
-
                                     </div>
                                     <div class="mt-3">
                                         <button type="button" class="btn  btn-primary btn-add-size">Add</button>

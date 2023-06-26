@@ -71,12 +71,10 @@
                     </p>
                 </a>
             </li>
-            <li class="">
-                <a href="" aria-expanded="true">
+            <li class="{{request()->routeIs('products.*') ? 'active' : ''}}">
+                <a href="{{route('products.index')}}" aria-expanded="true">
                     <i class="ti-panel"></i>
-                    <p>Product
-
-                    </p>
+                    <p>Product</p>
                 </a>
 
             </li>

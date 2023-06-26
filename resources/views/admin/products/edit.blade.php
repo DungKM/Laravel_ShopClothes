@@ -126,15 +126,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="{{ asset('plugin/ckeditor5-build-classic/ckeditor.js') }}"></script>
+    <script src="{{ asset('admin/assets/product/product.js') }}"></script>
     <script>
         let sizes = @json($product->details)
     </script>
-    <script>
-        let sizes = [{
-            id: Date.now(),
-            size: 'M',
-            quantity: 1
-        }];
-    </script>
-    <script src="{{ asset('admin/assets/product/product.js') }}"></script>
+    
 @endsection
