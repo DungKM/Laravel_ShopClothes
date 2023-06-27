@@ -50,8 +50,8 @@
             </div>
         </div>
         <ul class="nav">
-            <li class="{{request()->routeIs('home') ? 'active' : ''}}">
-                <a href="{{route('home')}}">
+            <li class="">
+                <a href="">
                     <i class="ti-panel"></i>
                     <p>Dashboard
                     </p>

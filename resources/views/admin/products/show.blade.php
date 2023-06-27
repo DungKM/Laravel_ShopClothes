@@ -24,19 +24,15 @@
 
                     <div class="form-group">
                         <label for="">Price : {{ $product->price }}</label>
-
                     </div>
-
                     <div class="form-group">
                         <label for="">Sale : {{ $product->sale }}</label>
-
                     </div>
                     <div class="form-group">
                         <label for="">Description</label>
                         <div>
                             {{ $product->description }}
                         </div>
-
                     </div>
                     <div>
                         <label for="">Size</label>
